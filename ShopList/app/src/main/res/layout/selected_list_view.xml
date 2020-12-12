@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+                                                   android:layout_height="match_parent"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:paddingTop="10dp"
+                  android:layout_gravity="start|top"
+                  android:layout_marginEnd="10dp"
+                  android:layout_marginStart="10dp"
+                  android:paddingBottom="10dp"
+                  android:orientation="horizontal" tools:ignore="MissingConstraints">
+
+        <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                android:layout_margin="5dp"
+                android:elevation="20dp">
+
+        <ImageView android:layout_width="80dp"
+                   android:scaleType="centerCrop"
+                   android:id="@+id/iv_productImage"
+                   android:layout_height="80dp"
+                   android:contentDescription="@string/prodImage"
+                   android:layout_gravity="start"/>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:layout_marginStart="10dp"
+                      android:layout_marginEnd="10dp"
+                      android:layout_gravity="center_vertical"
+                      >
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                    android:layout_width="30dp"
+                         android:id="@+id/btn_increase"
+                         android:src="@drawable/up"
+                         android:background="@null"
+                    android:layout_height="25dp"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:padding="3dp"
+                      android:textSize="15sp"
+                      android:id="@+id/tv_value"  />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                    android:layout_width="30dp"
+                    android:id="@+id/btn_decrease"
+                    android:src="@drawable/down"
+                    android:background="@null"
+                    android:layout_height="25dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:paddingTop="10dp"
+                      android:layout_gravity="start|center_vertical"
+                      android:paddingBottom="10dp"
+                      android:orientation="horizontal">
+
+        <TextView android:layout_width="wrap_content"
+                  android:minWidth="100dp"
+                  android:maxWidth="100dp"
+                  android:id="@+id/tv_productName"
+                  android:layout_height="wrap_content"
+                  android:text="@string/placeHolder"
+                  android:layout_weight="1"
+                  android:textSize="15sp"
+                  android:gravity="center_vertical"
+                  android:layout_gravity="start|center_vertical"
+                  android:layout_marginStart="10dp"
+                  android:layout_marginEnd="10dp"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:id="@+id/tv_price"
+                      android:layout_height="wrap_content"
+                      android:text="@string/placeHolder"
+                      android:layout_weight="1"
+                      android:minWidth="100dp"
+                      android:maxWidth="100dp"
+                      android:textSize="15sp"
+                      android:gravity="center"
+                      android:layout_gravity="start|center"
+                      android:layout_marginStart="10dp"
+                      android:layout_marginEnd="10dp"/>
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/btn_remove"
+                    android:layout_width="20dp"
+                         android:background="@null"
+                       android:src="@drawable/cancel"
+                    android:layout_marginEnd="8dp"
+                       android:layout_gravity="center_vertical"
+                       android:layout_height="20dp"
+            />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

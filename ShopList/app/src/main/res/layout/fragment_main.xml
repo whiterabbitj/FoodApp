@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:id="@+id/constraintLayout"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:fillViewport="true"
+                                                   android:scrollbars="none"
+                                                   tools:context=".ui.main.PlaceholderFragment">
+    <ListView
+            android:id="@+id/lw_productlistView"
+            android:divider="@drawable/divider"
+            android:dividerHeight="16.0dp"
+            android:nestedScrollingEnabled="true"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+             />
+
+
+
+
+</androidx.core.widget.NestedScrollView>

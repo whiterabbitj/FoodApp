@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ShopList</string>
+    <string name="tab_text_1">Cart</string>
+    <string name="tab_text_2">Order</string>
+    <string name="tab_text_3">Process</string>
+
+
+
+    <string name="prodImage">Product Image</string>
+    <string name="placeHolder">Place Holder</string>
+    <string name="menu">Menu</string>
+    <string name="totalPrice">Price:</string>
+    <string name="deliveryPrice">Delivery Price: Free</string>
+
+</resources>
